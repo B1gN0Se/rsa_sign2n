@@ -10,3 +10,16 @@ The repository contains:
 Additional reading: [Abusing JWT Public Keys Without the Public Key](https://blog.silentsignal.eu/2021/02/08/abusing-jwt-public-keys-without-the-public-key/)
 
 __You probably want to use the Docker image provided in the _standalone_ directory.__
+
+```sh
+cd rsa_sign2n/standalone 
+```
+```sh
+docker build . -t sig2n
+```
+```sh
+docker run -it sig2n /bin/bash
+```
+```sh
+python3 jwt_forgery.py ey.... ey....
+```
